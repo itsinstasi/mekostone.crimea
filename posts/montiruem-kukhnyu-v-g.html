@@ -43,6 +43,9 @@
     <meta property="og:locale" content="Ru-ru" />
     <meta property="og:site_name" content="mekostone.crimea" />
 
+	<!--modernizr-->
+	<script src="../js/vendors/modernizr-custom.js"></script>
+
 </head>
 <body>
     <!--[if lt IE 8]>
@@ -54,7 +57,7 @@
 		Вам нужно включить JavaScript в своем браузере, чтобы  отображение этой страницы было корректно.
     </noscript>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header" id="js-header">
 			<div class="container">
 				<div class="header__wrap">
 					<div class="header__left">
@@ -68,249 +71,255 @@
 			</div>
 		</header>	
 		<div class="main">
-			<div class="stories" style="display: none;">
+			<div class="stories">
 				<div class="container">
-					<div class="stories__slider" id="js-stories-slider">
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="mekostone">
-								<a href="../tags/./mekostone.html">
-									<div class="stories__slide-pic"><img src="../img/og/mekostone.png" alt="mekostone" /></div>
-									<div class="stories__slide-txt">mekostone</div>
-								</a>
+					<div class="stories__slider-wrap">
+						<div class="stories__slider" id="js-stories-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="stories__slide" title="mekostone">
+										<a href="../tags/./mekostone.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/mekostone.png);"></div>
+											<div class="stories__slide-txt">mekostone</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="крым кухни">
+										<a href="../tags/./krym-kukhni.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/krym-kukhni.png);"></div>
+											<div class="stories__slide-txt">крым кухни</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни крым">
+										<a href="../tags/./kukhni-krym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-krym.png);"></div>
+											<div class="stories__slide-txt">кухни крым</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="симферополь кухни">
+										<a href="../tags/./simferopol--kukhni.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/simferopol--kukhni.png);"></div>
+											<div class="stories__slide-txt">симферополь кухни</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни ялта">
+										<a href="../tags/./kukhni-yalta.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-yalta.png);"></div>
+											<div class="stories__slide-txt">кухни ялта</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн ялта">
+										<a href="../tags/./dizayn-yalta.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-yalta.png);"></div>
+											<div class="stories__slide-txt">дизайн ялта</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнер крым">
+										<a href="../tags/./dizayner-krym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayner-krym.png);"></div>
+											<div class="stories__slide-txt">дизайнер крым</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн симферополь">
+										<a href="../tags/./dizayn-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-simferopol-.png);"></div>
+											<div class="stories__slide-txt">дизайн симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн се вастополь">
+										<a href="../tags/./dizayn-se-vastopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-se-vastopol-.png);"></div>
+											<div class="stories__slide-txt">дизайн се вастополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="симферополь">
+										<a href="../tags/./simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/simferopol-.png);"></div>
+											<div class="stories__slide-txt">симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ремонт ялта">
+										<a href="../tags/./remont-yalta.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/remont-yalta.png);"></div>
+											<div class="stories__slide-txt">ремонт ялта</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнер ялта">
+										<a href="../tags/./dizayner-yalta.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayner-yalta.png);"></div>
+											<div class="stories__slide-txt">дизайнер ялта</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн дома крым">
+										<a href="../tags/./dizayn-doma-krym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-doma-krym.png);"></div>
+											<div class="stories__slide-txt">дизайн дома крым</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ремонт се вастополь">
+										<a href="../tags/./remont-se-vastopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/remont-se-vastopol-.png);"></div>
+											<div class="stories__slide-txt">ремонт се вастополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ремонт симферополь">
+										<a href="../tags/./remont-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/remont-simferopol-.png);"></div>
+											<div class="stories__slide-txt">ремонт симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайнер симферополь">
+										<a href="../tags/./dizayner-simferopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayner-simferopol-.png);"></div>
+											<div class="stories__slide-txt">дизайнер симферополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн крым">
+										<a href="../tags/./dizayn-krym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-krym.png);"></div>
+											<div class="stories__slide-txt">дизайн крым</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="крым мебель">
+										<a href="../tags/./krym-mebel-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/krym-mebel-.png);"></div>
+											<div class="stories__slide-txt">крым мебель</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="деловой крым">
+										<a href="../tags/./delovoy-krym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/delovoy-krym.png);"></div>
+											<div class="stories__slide-txt">деловой крым</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни се вастополь">
+										<a href="../tags/./kukhni-se-vastopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni-se-vastopol-.png);"></div>
+											<div class="stories__slide-txt">кухни се вастополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="крым">
+										<a href="../tags/./krym.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/krym.png);"></div>
+											<div class="stories__slide-txt">крым</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="кухни">
+										<a href="../tags/./kukhni.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kukhni.png);"></div>
+											<div class="stories__slide-txt">кухни</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="эксклюзивные кухни">
+										<a href="../tags/./eksklyuzivnye-kukhni.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/eksklyuzivnye-kukhni.png);"></div>
+											<div class="stories__slide-txt">эксклюзивные кухни</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="grandex">
+										<a href="../tags/./grandex.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/grandex.png);"></div>
+											<div class="stories__slide-txt">grandex</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн студия мебели">
+										<a href="../tags/./dizayn-studiya-mebeli.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn-studiya-mebeli.png);"></div>
+											<div class="stories__slide-txt">дизайн студия мебели</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="kitchendesign">
+										<a href="../tags/./kitchendesign.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/kitchendesign.png);"></div>
+											<div class="stories__slide-txt">kitchendesign</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="ялта">
+										<a href="../tags/./yalta.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/yalta.png);"></div>
+											<div class="stories__slide-txt">ялта</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="жигулинароща">
+										<a href="../tags/./zhigulinaroshcha.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/zhigulinaroshcha.png);"></div>
+											<div class="stories__slide-txt">жигулинароща</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="се вастополь">
+										<a href="../tags/./se-vastopol-.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/se-vastopol-.png);"></div>
+											<div class="stories__slide-txt">се вастополь</div>
+										</a>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="stories__slide" title="дизайн">
+										<a href="../tags/./dizayn.html">
+											<div class="stories__slide-pic" style="background-image: url(../img/og/dizayn.png);"></div>
+											<div class="stories__slide-txt">дизайн</div>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="крым кухни">
-								<a href="../tags/./krym-kukhni.html">
-									<div class="stories__slide-pic"><img src="../img/og/krym-kukhni.png" alt="крым кухни" /></div>
-									<div class="stories__slide-txt">крым кухни</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни крым">
-								<a href="../tags/./kukhni-krym.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-krym.png" alt="кухни крым" /></div>
-									<div class="stories__slide-txt">кухни крым</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="симферополь кухни">
-								<a href="../tags/./simferopol--kukhni.html">
-									<div class="stories__slide-pic"><img src="../img/og/simferopol--kukhni.png" alt="симферополь кухни" /></div>
-									<div class="stories__slide-txt">симферополь кухни</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни ялта">
-								<a href="../tags/./kukhni-yalta.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-yalta.png" alt="кухни ялта" /></div>
-									<div class="stories__slide-txt">кухни ялта</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн ялта">
-								<a href="../tags/./dizayn-yalta.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-yalta.png" alt="дизайн ялта" /></div>
-									<div class="stories__slide-txt">дизайн ялта</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнер крым">
-								<a href="../tags/./dizayner-krym.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayner-krym.png" alt="дизайнер крым" /></div>
-									<div class="stories__slide-txt">дизайнер крым</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн симферополь">
-								<a href="../tags/./dizayn-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-simferopol-.png" alt="дизайн симферополь" /></div>
-									<div class="stories__slide-txt">дизайн симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн се вастополь">
-								<a href="../tags/./dizayn-se-vastopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-se-vastopol-.png" alt="дизайн се вастополь" /></div>
-									<div class="stories__slide-txt">дизайн се вастополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="симферополь">
-								<a href="../tags/./simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/simferopol-.png" alt="симферополь" /></div>
-									<div class="stories__slide-txt">симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ремонт ялта">
-								<a href="../tags/./remont-yalta.html">
-									<div class="stories__slide-pic"><img src="../img/og/remont-yalta.png" alt="ремонт ялта" /></div>
-									<div class="stories__slide-txt">ремонт ялта</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнер ялта">
-								<a href="../tags/./dizayner-yalta.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayner-yalta.png" alt="дизайнер ялта" /></div>
-									<div class="stories__slide-txt">дизайнер ялта</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн дома крым">
-								<a href="../tags/./dizayn-doma-krym.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-doma-krym.png" alt="дизайн дома крым" /></div>
-									<div class="stories__slide-txt">дизайн дома крым</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ремонт се вастополь">
-								<a href="../tags/./remont-se-vastopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/remont-se-vastopol-.png" alt="ремонт се вастополь" /></div>
-									<div class="stories__slide-txt">ремонт се вастополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ремонт симферополь">
-								<a href="../tags/./remont-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/remont-simferopol-.png" alt="ремонт симферополь" /></div>
-									<div class="stories__slide-txt">ремонт симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайнер симферополь">
-								<a href="../tags/./dizayner-simferopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayner-simferopol-.png" alt="дизайнер симферополь" /></div>
-									<div class="stories__slide-txt">дизайнер симферополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн крым">
-								<a href="../tags/./dizayn-krym.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-krym.png" alt="дизайн крым" /></div>
-									<div class="stories__slide-txt">дизайн крым</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="крым мебель">
-								<a href="../tags/./krym-mebel-.html">
-									<div class="stories__slide-pic"><img src="../img/og/krym-mebel-.png" alt="крым мебель" /></div>
-									<div class="stories__slide-txt">крым мебель</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="деловой крым">
-								<a href="../tags/./delovoy-krym.html">
-									<div class="stories__slide-pic"><img src="../img/og/delovoy-krym.png" alt="деловой крым" /></div>
-									<div class="stories__slide-txt">деловой крым</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни се вастополь">
-								<a href="../tags/./kukhni-se-vastopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni-se-vastopol-.png" alt="кухни се вастополь" /></div>
-									<div class="stories__slide-txt">кухни се вастополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="крым">
-								<a href="../tags/./krym.html">
-									<div class="stories__slide-pic"><img src="../img/og/krym.png" alt="крым" /></div>
-									<div class="stories__slide-txt">крым</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="кухни">
-								<a href="../tags/./kukhni.html">
-									<div class="stories__slide-pic"><img src="../img/og/kukhni.png" alt="кухни" /></div>
-									<div class="stories__slide-txt">кухни</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="эксклюзивные кухни">
-								<a href="../tags/./eksklyuzivnye-kukhni.html">
-									<div class="stories__slide-pic"><img src="../img/og/eksklyuzivnye-kukhni.png" alt="эксклюзивные кухни" /></div>
-									<div class="stories__slide-txt">эксклюзивные кухни</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="grandex">
-								<a href="../tags/./grandex.html">
-									<div class="stories__slide-pic"><img src="../img/og/grandex.png" alt="grandex" /></div>
-									<div class="stories__slide-txt">grandex</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн студия мебели">
-								<a href="../tags/./dizayn-studiya-mebeli.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn-studiya-mebeli.png" alt="дизайн студия мебели" /></div>
-									<div class="stories__slide-txt">дизайн студия мебели</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="kitchendesign">
-								<a href="../tags/./kitchendesign.html">
-									<div class="stories__slide-pic"><img src="../img/og/kitchendesign.png" alt="kitchendesign" /></div>
-									<div class="stories__slide-txt">kitchendesign</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="ялта">
-								<a href="../tags/./yalta.html">
-									<div class="stories__slide-pic"><img src="../img/og/yalta.png" alt="ялта" /></div>
-									<div class="stories__slide-txt">ялта</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="жигулинароща">
-								<a href="../tags/./zhigulinaroshcha.html">
-									<div class="stories__slide-pic"><img src="../img/og/zhigulinaroshcha.png" alt="жигулинароща" /></div>
-									<div class="stories__slide-txt">жигулинароща</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="се вастополь">
-								<a href="../tags/./se-vastopol-.html">
-									<div class="stories__slide-pic"><img src="../img/og/se-vastopol-.png" alt="се вастополь" /></div>
-									<div class="stories__slide-txt">се вастополь</div>
-								</a>
-							</div>
-						</div>
-						<div>
-							<div class="stories__slide js-stories-popup-open" title="дизайн">
-								<a href="../tags/./dizayn.html">
-									<div class="stories__slide-pic"><img src="../img/og/dizayn.png" alt="дизайн" /></div>
-									<div class="stories__slide-txt">дизайн</div>
-								</a>
-							</div>
-						</div>
+						<div class="stories__arrow stories__arrow--prev" id="js-stories-prev"></div>
+						<div class="stories__arrow stories__arrow--next" id="js-stories-next"></div>
 					</div>
 				</div>
 			</div>
@@ -341,9 +350,7 @@
 							</div>
 						<div>
 							<a href="https://www.instagram.com/p/BR_Lb9XD_sq/" 
-								target="_blank" class="links-page-list__item-link">
-								<strong>Комментировать</strong>
-								<span>Instagram</span>
+								target="_blank" class="links-page-btn shake"><strong>Комментировать</strong>&nbsp;<span>Instagram</span>
 							</a>
 						</div>
 
@@ -376,9 +383,9 @@
 										
 									</h3>
 									<ul class="article-bar__tags-list">
+									<li><a href="./xxeksklyuzivnye-nabory-ot-mekostone---razdelochnye-doski-iz-iskusstvennogo-kamnya.html">❤️Эксклюзивные наборы от Mekostone - разделочные доски из искусственного камня.</a></li>
 									<li><a href="./druz-yax-vsem-privet-1.html">Друзья, всем привет.</a></li>
 									<li><a href="./druz-yax-vsem-privet.html">Друзья, всем привет.</a></li>
-									<li><a href="./xxeksklyuzivnye-nabory-ot-mekostone---razdelochnye-doski-iz-iskusstvennogo-kamnya.html">❤️Эксклюзивные наборы от Mekostone - разделочные доски из искусственного камня.</a></li>
 									<li><a href="./samaya-praktichnaya-stoleshnitsa-dlya-kukhnixx.html">Самая практичная столешница для кухни😉.</a></li>
 									</ul>
 								</nav>
@@ -390,8 +397,8 @@
 									<ul class="article-bar__tags-list">
 									<li><a href="./kukhnya-bez-ruchekx-pod-potolokx-s-ostrovom-i-vse-eto-v-trekhkomnatnoy-kvartire.html">Кухня без ручек, под потолок, с островом и все это в трехкомнатной квартире!</a></li>
 									<li><a href="./12-metrov-kukhni---eto-kak.html">12 метров кухни - это как?</a></li>
-									<li><a href="./kruglaya-kukhnya-kak-eto---a-vot-tak.html">Круглая кухня как это - а вот так!</a></li>
-									<li><a href="./smeshannyy-stil--xeklektikax---novoe-napravlenie-v-dizaynex-garmoniya-sochetaniya-fasadov-podcherkivayut-sh.html">Смешанный стиль «Эклектика» - новое направление в дизайне, гармония сочетания фасадов подчеркивают шик кухни.</a></li>
+									<li><a href="./kukhnya-izgotovlena-dlya-zakazchikov-v-simferopolex-zhk-gorod-mira.html">Кухня изготовлена для заказчиков в Симферополе, ЖК Город Мира.</a></li>
+									<li><a href="./videootzyv-nashey-otvetstvennoy-zakazchitsy-xxxxxx.html">Видеоотзыв нашей ответственной заказчицы 🔥🔥🔥.</a></li>
 									</ul>
 								</nav>
 								<nav class="article-bar__tags">
@@ -400,10 +407,10 @@
 										
 									</h3>
 									<ul class="article-bar__tags-list">
+									<li><a href="./smeshannyy-stil--xeklektikax---novoe-napravlenie-v-dizaynex-garmoniya-sochetaniya-fasadov-podcherkivayut-sh.html">Смешанный стиль «Эклектика» - новое направление в дизайне, гармония сочетания фасадов подчеркивают шик кухни.</a></li>
 									<li><a href="./keramika.html">Керамика.</a></li>
-									<li><a href="./kukhnya-izgotovlena-dlya-zakazchikov-v-simferopolex-zhk-gorod-mira.html">Кухня изготовлена для заказчиков в Симферополе, ЖК Город Мира.</a></li>
 									<li><a href="./trend-2019xxxxxx-kukhni-premium-klassa.html">Тренд 2019🔥🔥🔥 кухни премиум класса!</a></li>
-									<li><a href="./videootzyv-nashey-otvetstvennoy-zakazchitsy-xxxxxx.html">Видеоотзыв нашей ответственной заказчицы 🔥🔥🔥.</a></li>
+									<li><a href="./x-siyayushchiy-svetx-teplo-ix-lyubov-.html">☀ Сияющий свет, тепло и… любовь.</a></li>
 									</ul>
 								</nav>
 								<nav class="article-bar__tags">
@@ -423,77 +430,77 @@
 					<section class="article-more">
 						<h2 class="article-more__title">ПОПУЛЯРНЫЕ</h2>
 						<div class="article-more__list">
+							<a href="./xxeksklyuzivnye-nabory-ot-mekostone---razdelochnye-doski-iz-iskusstvennogo-kamnya.html" class="article-more__item">
+								<div class="article-more__item-pic">
+									<div class="article-more__item-pic-blind">
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>3201</span>
+									</div>
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a92aa33c84ac2e801435d94bab8620f7/5DA8D8FD/t51.2885-15/e35/69044491_492821987945821_5479259982717528264_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="❤️Эксклюзивные наборы от Mekostone - разделочные доски из искусственного камня.">
+								</div>
+								<div class="article-more__item-name">❤️Эксклюзивные наборы от Mekostone - разделочные доски из искусственного камня.</div>
+							</a>
 							<a href="./druz-yax-vsem-privet-1.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>3087</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>3106</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/fe2193e01d78769a5de6b5dbe9414b97/5DA637C9/t51.2885-15/e35/65226854_114974826439286_271219884478611231_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="Друзья, всем привет.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/42a73c75d4837ff0ca9614a88c6c90c2/5DA8DAC9/t51.2885-15/e35/65226854_114974826439286_271219884478611231_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="Друзья, всем привет.">
 								</div>
 								<div class="article-more__item-name">Друзья, всем привет.</div>
 							</a>
 							<a href="./druz-yax-vsem-privet.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>2902</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>2992</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/041aab95a31ba9e268f4697ddd0b1c3e/5DA545C4/t51.2885-15/e35/69621913_695389034312879_2487725053839741090_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="Друзья, всем привет.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/8b142ccf1b15b246685271dee9ab76da/5DA89184/t51.2885-15/e35/69621913_695389034312879_2487725053839741090_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=111" alt="Друзья, всем привет.">
 								</div>
 								<div class="article-more__item-name">Друзья, всем привет.</div>
-							</a>
-							<a href="./xxeksklyuzivnye-nabory-ot-mekostone---razdelochnye-doski-iz-iskusstvennogo-kamnya.html" class="article-more__item">
-								<div class="article-more__item-pic">
-									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>2802</span>
-									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/accf0f0fe0c1cbeb9721498655ef9c4b/5DA635FD/t51.2885-15/e35/69044491_492821987945821_5479259982717528264_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=101" alt="❤️Эксклюзивные наборы от Mekostone - разделочные доски из искусственного камня.">
-								</div>
-								<div class="article-more__item-name">❤️Эксклюзивные наборы от Mekostone - разделочные доски из искусственного камня.</div>
 							</a>
 							<a href="./samaya-praktichnaya-stoleshnitsa-dlya-kukhnixx.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>2081</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>2251</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/e58dcee519abaf8bab0fa661e3db409d/5DA64BC8/t51.2885-15/e35/70597903_917811371915100_5024728508245610601_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Самая практичная столешница для кухни😉.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/d73ba24a87c0152bfb5fc4132b4562d9/5DA8EEC8/t51.2885-15/e35/70597903_917811371915100_5024728508245610601_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=100" alt="Самая практичная столешница для кухни😉.">
 								</div>
 								<div class="article-more__item-name">Самая практичная столешница для кухни😉.</div>
 							</a>
 							<a href="./kukhnya-bez-ruchekx-pod-potolokx-s-ostrovom-i-vse-eto-v-trekhkomnatnoy-kvartire.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1474</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1534</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5b88eafd87739dddf21ae7ced0c3ed8c/5DA5D65C/t51.2885-15/e35/67387247_1022092331496117_4895151411310642800_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Кухня без ручек, под потолок, с островом и все это в трехкомнатной квартире!">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/08c8bd186ddff2011a1c4735f6550597/5DA8795C/t51.2885-15/e35/67387247_1022092331496117_4895151411310642800_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Кухня без ручек, под потолок, с островом и все это в трехкомнатной квартире!">
 								</div>
 								<div class="article-more__item-name">Кухня без ручек, под потолок, с островом и все это в трехкомнатной квартире!</div>
 							</a>
 							<a href="./12-metrov-kukhni---eto-kak.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1331</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1368</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/5549a9cb2709b8b1feb07622b6e78837/5DA564FB/t51.2885-15/e35/68742683_686621221760762_8741726702396295020_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="12 метров кухни - это как?">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/b8a25ad2765bb1e1c67161576c0b344c/5DA8B0BB/t51.2885-15/e35/68742683_686621221760762_8741726702396295020_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=102" alt="12 метров кухни - это как?">
 								</div>
 								<div class="article-more__item-name">12 метров кухни - это как?</div>
 							</a>
-							<a href="./kruglaya-kukhnya-kak-eto---a-vot-tak.html" class="article-more__item">
+							<a href="./kukhnya-izgotovlena-dlya-zakazchikov-v-simferopolex-zhk-gorod-mira.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1102</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>27</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1161</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a805719c051bac657a1cfd3927abd61f/5E402157/t51.2885-15/e35/64480909_378439079457536_8762819275534611179_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=108" alt="Круглая кухня как это - а вот так!">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/a34e2bbef685c71522bfb7e43b54ad2e/5DA87379/t51.2885-15/e35/70151474_505993453554291_7755231381686734449_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=103" alt="Кухня изготовлена для заказчиков в Симферополе, ЖК Город Мира.">
 								</div>
-								<div class="article-more__item-name">Круглая кухня как это - а вот так!</div>
+								<div class="article-more__item-name">Кухня изготовлена для заказчиков в Симферополе, ЖК Город Мира.</div>
 							</a>
-							<a href="./smeshannyy-stil--xeklektikax---novoe-napravlenie-v-dizaynex-garmoniya-sochetaniya-fasadov-podcherkivayut-sh.html" class="article-more__item">
+							<a href="./videootzyv-nashey-otvetstvennoy-zakazchitsy-xxxxxx.html" class="article-more__item">
 								<div class="article-more__item-pic">
 									<div class="article-more__item-pic-blind">
-										<span><i class="fa fa-comment-o" aria-hidden="true"></i>0</span> <span><i class="fa fa-heart" aria-hidden="true"></i>867</span>
+										<span><i class="fa fa-comment-o" aria-hidden="true"></i>1</span> <span><i class="fa fa-heart" aria-hidden="true"></i>1003</span>
 									</div>
-									<img src="https://scontent-arn2-2.cdninstagram.com/vp/2c383e56b0000e15ce76b82ec4078585/5E224449/t51.2885-15/e35/s1080x1080/67745278_485889952224082_6165842824139576283_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=110" alt="Смешанный стиль «Эклектика» - новое направление в дизайне, гармония сочетания фасадов подчеркивают шик кухни.">
+									<img src="https://scontent-arn2-2.cdninstagram.com/vp/574deeffcaddc43539f00f435df9aa97/5DA87DA5/t51.2885-15/e35/71089341_461242517825577_459491201739356628_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_cat=109" alt="Видеоотзыв нашей ответственной заказчицы 🔥🔥🔥.">
 								</div>
-								<div class="article-more__item-name">Смешанный стиль «Эклектика» - новое направление в дизайне, гармония сочетания фасадов подчеркивают шик кухни.</div>
+								<div class="article-more__item-name">Видеоотзыв нашей ответственной заказчицы 🔥🔥🔥.</div>
 							</a>
 						</div>
 					</section>		
@@ -537,11 +544,12 @@
 			</div>
 		</div>		
 	</div>
+	<!--swiper-->
+	<script src="../js/vendors/swiper.min.js"></script>
 	<!--jQuery-->
 	<script src="../js/vendors/jquery.min.js"></script>
-	<script src="../js/vendors/jquery.loadScroll.js"></script>
-	<!--device-->
-	<script src="../js/vendors/slick.min.js"></script>
+	<!--lazyloadxt-->
+	<script src="../js/vendors/jquery.lazyloadxt.js"></script>
 	<!--init-->
 	<script src="../js/jquery.init.js"></script>
 	<!--my scripts-->
