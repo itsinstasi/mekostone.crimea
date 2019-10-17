@@ -1,2 +1,2 @@
 ﻿User-agent: *
-Sitemap: http://mekostone-crimea.itsinsta.site//sitemap.xml
+Sitemap: https://mekostone-crimea.itsinsta.site//sitemap.xml
